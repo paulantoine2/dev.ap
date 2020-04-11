@@ -1,0 +1,20 @@
+@import './utils/colors';
+@import './utils/mixins';
+@import './utils/normalize';
+@import './utils/typography';
+// @import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+
+@import './components/layout';
+@import './components/footer';
+@import './components/button';
+@import './components/menu';
+@import './components/logo';
+@import './components/card';
+@import './components/contact-block';
+
+@import './pages/home';
+@import './pages/about';
+@import './pages/skills';
+@import './pages/work';
+
+@import "../node_modules/slick-carousel/slick/slick.scss";

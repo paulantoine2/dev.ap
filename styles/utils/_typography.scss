@@ -1,0 +1,71 @@
+.typography {
+  &__headline {
+    font-size: 5em;
+    font-weight: 600;
+    color: $main;
+    letter-spacing: -1.5px;
+    @include mq(600px, max) {
+      font-size:4.2em;
+    }
+    &__elevated {
+      font-size: 6.4em;
+      font-weight: 600;
+      @include mq(600px, max) {
+        font-size:5.1em;
+      }
+      color: $main;
+    }
+  }
+  &__subhead {
+    font-size: 2.4em;
+    line-height: 1.5;
+    // margin-top: 10px;
+    @include mq(600px, max) {
+      font-size:1.8em;
+    }
+    font-weight: 300;
+  }
+  &__eyebrow {
+    font-size: 2.4em;
+    @include mq(600px, max) {
+      font-size:1.8em;
+    }
+    font-weight: 600;
+    color: $main;
+    @at-root {
+      h3#{&} {
+        font-size: 2em;
+      }
+    }
+  }
+  &__body {
+    font-size: 1.4em;
+    color: $dark;
+    
+    &__elevated {
+      font-size: 1.6em;
+      color: $dark;
+      > * {
+        line-height: 25px;
+      }
+      @include mq(600px, max) {
+        font-size: 1.4em;
+      }
+    }
+    > * {
+      line-height: 2;
+    }
+    li {
+      color: $dark;
+      line-height: 2;
+      list-style-position: inside;
+    }
+  }
+  &__upcase {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 2.5;
+  }
+}

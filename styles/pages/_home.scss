@@ -1,0 +1,150 @@
+.Home {
+  &__hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .typography__subhead {
+      line-height: 1.5;
+      margin-top: 12px;
+    }
+    .Button {
+      margin-top: 20px;
+    }
+    @include mq(600px, max) {
+      padding-top: 10px;
+      padding-bottom: 0;
+      .typography__headline {
+        height: 70px;
+        font-size: 8vw;
+        .type-wrap span {
+          white-space: normal!important;
+        }
+      }
+    }
+  }
+  &__portfolio {
+    position: relative;
+    padding: 0;
+    .cards-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+    .Card {
+      width: 32%;
+      height: auto;
+      @include mq(600px, min) {
+        &:first-child, &:last-child {
+          transform: scale(0.9);
+        }
+      }
+      
+    }
+    .Card__title {
+      top: 2.3rem;
+      bottom: auto;
+    }
+    @include mq(600px, max) {
+      width: 100vw;
+        overflow: scroll;
+      .Card__title {
+        font-size: 6px;
+        top: 2em;
+      }
+      .Card {
+        width: 220px;
+      }
+      .cards-wrapper {
+        margin: 50px 0;
+        padding: 0 30px;
+        width: 760px;     
+      }
+    }
+    .button-wrapper {
+      text-align: center;
+    }
+  }
+  &__clients {
+    margin: 50px auto;
+    max-width: calc(100% - 60px);
+    text-align: center;
+    background-color: $light;
+    padding: 100px 0 30px 0;
+    overflow: hidden;
+    @include mq(600px, max) {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+    &__container {
+      display: flex;
+      margin: 100px 0;
+      justify-content: space-around;
+      width: 2800px;
+      animation: horizontalScroll 15s linear infinite;
+      @include mq(600px, max) {
+        width: 2000px;
+        animation: horizontalScrollMob 10s linear infinite;
+      }
+      @keyframes horizontalScroll {
+        from {
+          margin-left: 0;
+        }
+        to {
+          margin-left: -1400px;
+        }
+      }
+      @keyframes horizontalScrollMob {
+        from {
+          margin-left: 0;
+        }
+        to {
+          margin-left: -1000px;
+        }
+      }
+      img {
+        display: block;
+        height: 100%;
+        width: auto;
+        max-height: 90px;
+        @include mq(600px, max) {
+          max-height: 80px;
+        }
+      }
+    }
+    .Button {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+  &__about {
+    margin: 150px auto;
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      @include mq(600px, max) {
+        flex-direction: column;
+      }
+    }
+    .Card {
+      width: calc(50% - 20px);
+      height: 200px;
+      @include mq(600px, max) {
+        width: 100%;
+        height: calc(100vw / 3);
+        margin-bottom: 3rem;
+      }
+      img {
+        object-position: center;
+      }
+    }
+    .Card__title {
+      @include mq(600px, max) {
+        font-size: 7px;
+      }
+    }
+    @include mq(600px, max) {
+      margin: 50px auto;
+    }
+  }
+}

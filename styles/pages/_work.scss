@@ -1,0 +1,51 @@
+.Work__title {
+  text-align: center;
+}
+.Work__container {
+  max-width: 1280px;
+  padding-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  @include mq(600px, max) {
+    flex-direction: column;
+  }
+  .Card {
+    height: 250px;
+    &__title {
+      top: 2.3em;
+      bottom: auto;
+    }
+    img {
+      margin-top: 20px;
+    }
+  }
+  &__perso {
+    padding-left: 15px;
+    padding-right: 15px;
+    > * {
+      width: calc(33% - 30px);
+      margin: 0 15px;
+      @include mq(600px, max) {
+        width: 100%;
+        margin: 0 0 30px 0;
+        height: 50vw;
+        .Card {
+          height: 100%;
+          &__title {
+            top: 1.8em;
+          }
+        }
+        .typography__headline {
+          font-size: 2.4em;
+        }
+      }
+    }
+  }
+  .Work__card {
+    min-height: 325px;
+    @include mq(600px, max) {
+      min-height: none;
+    }
+  }
+}

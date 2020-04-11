@@ -1,0 +1,34 @@
+.Logo {
+  &__full {
+    position: relative;
+    img {
+      height: 80px;
+    }
+    @include mq(600px, min) {
+      font-size: 2.5em;
+    }
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    // text-transform: uppercase;
+    color: $main;
+    display: flex;
+    align-items: center;
+    letter-spacing: -1px;
+    span {
+      margin-left: 1em;
+      transition: .3s ease;
+    }
+    .logo_border {
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      transition: all .3s ease-out;
+      &:hover {
+        transform: scale(2);
+        opacity: 0;
+      }
+      
+    }
+  }
+}
