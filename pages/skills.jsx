@@ -14,10 +14,9 @@ export default class Index extends React.Component {
     const container = '.tagcloud-container';
 
     const texts = [
-      renderToString(<FaSass />), renderToString(<FaReact />),
-      renderToString(<FaCss3 />), 'Animation', renderToString(<FaAngular />),
-      'AngularJS', renderToString(<FaNodeJs />), 'Next.js',
-      renderToString(<FaDrupal />),
+      'Animation', 'Performance',
+      'AngularJS', 'SVG', 'Next.js', 'ES6', 'Typescript',
+      'React', 'NodeJS', 'Sass', 'UX', 'Design'
     ];
     const options = {
       radius: 200
