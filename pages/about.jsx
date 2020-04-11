@@ -12,7 +12,7 @@ export default class Index extends React.Component {
       <Layout title={'About'}>
         <Fade delay={50}>
           <section className="About About__wrapper">
-            <img className="SideImg" src="profile.jpeg" alt="" />
+            <img className="SideImg" src="profile.jpeg" alt="Paul profile picture" />
             <div>
               <h1 className="typography__headline">About</h1>
               <p className="typography__subhead">Get to know me</p>
@@ -24,7 +24,7 @@ export default class Index extends React.Component {
                 <p>🌍 I work remotly and am not based anywhere.</p>
                 <br/>
               </div>
-              <Button href={'/skills'}>How can I be useful ?</Button>
+              <Button href={'/skills'} title={'My skills'}>How can I be useful ?</Button>
             </div>
           </section>
           <ContactBlock />

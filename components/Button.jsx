@@ -8,7 +8,11 @@ export default function Button (props) {
     {props.children}
     <div className="halo"></div>
     </button>
-  if (props.href) return <Link href={props.href}>{button}</Link>
+  if (props.href && props.href.startsWith('/')) {
+    return <Link href={props.href}>{button}</Link>
+  } else if (props.href) {
+    return <a href={props.href} title={props.title}>{button}</a>
+  }
   return button;
   
 }

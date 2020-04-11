@@ -19,14 +19,14 @@ export default class Index extends React.Component {
               ]} />
             </h1>
             <p className="typography__subhead">Front end. Javascript. Motion design integration.</p>
-            <Button href="/work">See all my work</Button>
+            <Button href="/work" title="My Work">See all my work</Button>
           </section>
           <section className="Home__portfolio">
             <Fade bottom>
               <div className="cards-wrapper">
-                <Card href={'/work/'} img={{ url: '/pdb.png', alt: 'PDB Website' }} title={'E-commerce'} sub_title={'La plateforme du bâtiment'} />
-                <Card href={'/work/'} img={{ url: '/emn.png', alt: 'EM Normandie Website' }} title={'CMS Websites'} sub_title={'EM Normandie'} />
-                <Card href={'/work/'} img={{ url: '/red.png', alt: 'Redspher Portal app' }} title={'Mobile apps'} sub_title={'Redspher Portal'} />
+                <Card href={'/work'} img={{ url: '/pdb.png', alt: 'PDB Website' }} title={'E-commerce'} sub_title={'La plateforme du bâtiment'} />
+                <Card href={'/work'} img={{ url: '/emn.png', alt: 'EM Normandie Website' }} title={'CMS Websites'} sub_title={'EM Normandie'} />
+                <Card href={'/work'} img={{ url: '/red.png', alt: 'Redspher Portal app' }} title={'Mobile apps'} sub_title={'Redspher Portal'} />
               </div>
             </Fade>
           </section>

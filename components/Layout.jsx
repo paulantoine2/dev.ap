@@ -18,6 +18,10 @@ export default class Layout extends Component {
   componentDidMount() {
     Fonts();
   }
+
+  toggleMenu() {
+    this.setState(state => ({ ...state, menuOpen: !state.menuOpen }))
+  }
   
   render() {
     const { menuOpen } = this.state;
@@ -54,9 +58,6 @@ export default class Layout extends Component {
           <Button className={classnames('Menu__button', {'Menu__button--open': menuOpen})} onClick={() => this.toggleMenu()}>
             MENU { menuOpen ? <MdClose /> : <MdMenu />}
           </Button>
-          {/* <button className={classnames('Menu__button', {'Menu__button--open': menuOpen})} onClick={() => this.toggleMenu()}>
-            <span>MENU</span> { menuOpen ? <MdClose /> : <MdMenu />}
-          </button> */}
           <Menu open={menuOpen} />
         </header>
         <main className="Main">
@@ -69,10 +70,9 @@ export default class Layout extends Component {
             <a href="https://www.linkedin.com/in/paul-antoine-183707121/" title="LinkedIn"><FaLinkedin /></a>
           </div>
           <div className="Footer__sub">
-            Design and Development by Paul ANTOINE | © antoine-paul.com 2020 | Conditions
+            Design and Development by Paul ANTOINE with NextJS and Netlify | © antoine-paul.com 2020
           </div>
         </footer>
-        {/* <div className="Left__line"></div> */}
       </div>
     )
   }

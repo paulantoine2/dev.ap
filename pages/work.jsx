@@ -6,23 +6,6 @@ import { FaGithub, FaCss3, FaReact, FaSass, FaNodeJs, FaAngular, FaDrupal } from
 import { DiJqueryLogo, DiJavascript1 } from 'react-icons/di';
 
 export default class Work extends React.Component {
-  componentDidMount() {
-    // window.addEventListener('scroll', (e) => {
-    //   if (window.innerWidth < 900) {
-    //     const wc_img = document.getElementsByClassName('Work__card__img');
-    //     for (const el of wc_img) {
-    //       const to_move = el.classList.contains('paysage') ? 150 : 350;
-    //       const bounds = el.getBoundingClientRect();
-    //       const y_pos = bounds.y;
-    //       const y_perc = 1 - ((y_pos + 300) / (window.innerHeight - 300));
-    //       const val = to_move * y_perc;
-    //       el.style.objectPosition = `0 -${val}px`;
-    //     }
-    //   }
-    // });
-  }
-
-
   render() {
     const sliderSettings = {
       infinite: true,
@@ -142,9 +125,9 @@ export default class Work extends React.Component {
           </section>
           <section className="Work__container Work__container__perso">
             <Fade delay={50}>
-              <Card href={'https://paulantoine2.github.io/preview/'} img={{ url: '/preview.png' }} title={'Instagram Preview'} color={'#FFD800'} />
-              <Card href={'https://paulantoine2.github.io/2048/'} img={{ url: '/2048.png' }} title={'2048 Game'} color={'#FF4500'} />
-              <Card href={'https://paulantoine2.github.io/demineur/'} img={{ url: '/demin.png' }} title={'Minesweeper'} color={'#FFA500'} />
+              <Card href={'https://paulantoine2.github.io/preview/'} img={{ url: '/preview.png', alt: 'Instagram preview website' }} title={'Instagram Preview'} color={'#FFD800'} />
+              <Card href={'https://paulantoine2.github.io/2048/'} img={{ url: '/2048.png', alt: '2048 Game Website' }} title={'2048 Game'} color={'#FF4500'} />
+              <Card href={'https://paulantoine2.github.io/demineur/'} img={{ url: '/demin.png', alt: 'Minesweeper game Website' }} title={'Minesweeper'} color={'#FFA500'} />
             </Fade>
           </section>
           <ContactBlock />
