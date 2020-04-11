@@ -19,9 +19,6 @@ export default class Layout extends Component {
     Fonts();
   }
   
-  toggleMenu() {
-    this.setState(state => ({ ...state, menuOpen: !state.menuOpen }))
-  }
   render() {
     const { menuOpen } = this.state;
     const { title } = this.props;
@@ -38,6 +35,15 @@ export default class Layout extends Component {
           <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Paul Antoine - Developer" />
           <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Paul Antoine - Developer" />
           <meta property="fb:app_id" content="271915029939800"></meta>
+          <link rel="icon" type="image/ico" href="/favicon.ico" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102252045-3"></script>
+          <script dangerouslySetInnerHTML={{__html:`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-102252045-3'); `}}> 
+          </script>
         </Head>
         <header>
           <a href="/" className="Logo__full">

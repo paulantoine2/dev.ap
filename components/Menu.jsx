@@ -15,7 +15,7 @@ export default class Menu extends React.Component {
             <li><ActiveLink className="Menu__item" href="/skills">My Skills</ActiveLink></li>
             <li><ActiveLink className="Menu__item" href="/about">About me</ActiveLink></li>
             <br/>
-            <li><ActiveLink className="Menu__item Menu__item--disabled" href="/blog">Blog<span className="soon-badge">Soon</span></ActiveLink></li>
+            <li><div className="Menu__item Menu__item--disabled">Blog<span className="soon-badge">Soon</span></div></li>
           </ul>
         </nav>
       </div>
