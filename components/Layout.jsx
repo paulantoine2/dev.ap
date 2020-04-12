@@ -34,14 +34,13 @@ export default class Layout extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="description" content="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs." />
           <meta name="keywords" content="portfolio, web, developer, website, web developer, fullstack, programming, ux, webdesign, front-end, ui" />
-          <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://dev.antoine-paul.com" />
-          <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://dev.antoine-paul.com/fb_image.png" />
-          <meta property="og:image" name="image" content="https://dev.antoine-paul.com/fb_image.png" />
-          <meta prefix="og: http://ogp.me/ns#" property="og:image:alt" content="Antoine Paul website preview"/>
-          <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Freelance front-end developer. Remote." />
-          <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Paul Antoine - Developer" />
-          <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
-          <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Paul Antoine - Developer" />
+          <meta property="og:url" content="//dev.antoine-paul.com" />
+          <meta property="og:image" name="image" content="//dev.antoine-paul.com/fb_image.png" />
+          <meta property="og:image:alt" content="Antoine Paul website preview"/>
+          <meta property="og:description" content="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs." />
+          <meta property="og:title" content="Paul Antoine - Developer" />
+          <meta property="og:type" content="website" />
+          <meta property="og:site_name" content="Paul Antoine - Developer" />
           <meta property="fb:app_id" content="271915029939800"></meta>
           <link rel="icon" type="image/ico" href="/favicon.ico" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102252045-3"></script>
