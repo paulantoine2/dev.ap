@@ -32,10 +32,11 @@ export default class Layout extends Component {
         <Head>
           <title>Paul Antoine | { title }</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="description" content="Developer producing high quality websites and apps with outstanding user experience." />
+          <meta name="description" content="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs." />
           <meta name="keywords" content="portfolio, web, developer, website, web developer, fullstack, programming, ux, webdesign, front-end, ui" />
           <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://dev.antoine-paul.com" />
-          <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://dev.antoine-paul.com/fb_image.png" />
+          <meta prefix="og: http://ogp.me/ns#" property="og:image" name="image" content="https://dev.antoine-paul.com/fb_image.png" />
+          <meta prefix="og: http://ogp.me/ns#" property="og:image:alt" content="Antoine Paul website preview"/>
           <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Freelance front-end developer. Remote." />
           <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Paul Antoine - Developer" />
           <meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Paul Antoine - Developer" />
