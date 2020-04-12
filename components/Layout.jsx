@@ -17,6 +17,7 @@ export default class Layout extends Component {
   }
   componentDidMount() {
     Fonts();
+    document.getElementById('main-container').style.visibility = 'visible';
   }
 
   toggleMenu() {
@@ -27,7 +28,7 @@ export default class Layout extends Component {
     const { menuOpen } = this.state;
     const { title } = this.props;
     return (
-      <div>
+      <div id="main-container" style={{visibility: 'hidden'}}>
         <Head>
           <title>Paul Antoine | { title }</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -66,8 +67,8 @@ export default class Layout extends Component {
         <footer className="Footer">
           <a className="Footer__title upcase" href="antoine-paul.com"><img src='/logo.svg' alt="logo"/> ANTOINE-PAUL.COM</a>
           <div className="Footer__links">
-            <a href="https://github.com/paulantoine2" title="Github"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/paul-antoine-183707121/" title="LinkedIn"><FaLinkedin /></a>
+            <a href="https://github.com/paulantoine2" title="Github" target="_blank"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/paul-antoine-183707121/" title="LinkedIn" target="_blank"><FaLinkedin /></a>
           </div>
           <div className="Footer__sub">
             Design and Development by Paul ANTOINE with NextJS and Netlify | © antoine-paul.com 2020
