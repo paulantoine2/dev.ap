@@ -4,13 +4,12 @@ import Menu from './Menu';
 import Fonts from '../helpers/Fonts';
 import { MdClose, MdMenu } from 'react-icons/md';
 import classnames from 'classnames';
-import { FaInstagram, FaTwitter, FaYoutube, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import Button from './Button';
 
 export default class Layout extends Component {
   constructor(props) {
     super(props)
-  
     this.state = {
        menuOpen: false
     }
@@ -26,22 +25,16 @@ export default class Layout extends Component {
   
   render() {
     const { menuOpen } = this.state;
-    const { title } = this.props;
     return (
       <div id="main-container" style={{visibility: 'hidden'}}>
         <Head>
-          <title>Paul Antoine | { title }</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="description" content="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs." />
-          <meta name="keywords" content="portfolio, web, developer, website, web developer, fullstack, programming, ux, webdesign, front-end, ui" />
-          <meta property="og:url" content="//dev.antoine-paul.com" />
-          <meta property="og:image" name="image" content="//dev.antoine-paul.com/fb_image.png" />
+          {/* <meta property="og:url" content={`https://dev.antoine-paul.com`} />
+          <meta property="og:image" content="https://dev.antoine-paul.com/fb_image.png" />
           <meta property="og:image:alt" content="Antoine Paul website preview"/>
           <meta property="og:description" content="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs." />
-          <meta property="og:title" content="Paul Antoine - Developer" />
-          <meta property="og:type" content="website" />
-          <meta property="og:site_name" content="Paul Antoine - Developer" />
-          <meta property="fb:app_id" content="271915029939800"></meta>
+          <meta property="og:title" content={`${title} | Paul Antoine`} />
+          <meta property="og:type" content="profile" /> */}
           <link rel="icon" type="image/ico" href="/favicon.ico" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102252045-3"></script>
           <script dangerouslySetInnerHTML={{__html:`

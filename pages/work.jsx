@@ -4,20 +4,32 @@ import Fade from 'react-reveal/Fade'
 import ContactBlock from '../components/ContactBlock';
 import { FaGithub, FaCss3, FaReact, FaSass, FaNodeJs, FaAngular, FaDrupal } from 'react-icons/fa';
 import { DiJqueryLogo, DiJavascript1 } from 'react-icons/di';
+import { NextSeo } from 'next-seo';
 
 export default class Work extends React.Component {
   render() {
-    const sliderSettings = {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      centerMode: true,
-      centerPadding: '120px',
-      arrows: false
-    };
     return (
-      <Layout title={'Work'}>
+      <Layout>
+        <NextSeo
+          noindex={true}
+          title="Paul Antoine | Work"
+          description="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs."
+          canonical="https://dev.antoine-paul.com/work"
+          openGraph={{
+            url: 'https://dev.antoine-paul.com/work',
+            title: '👨🏻‍💻 Paul Antoine | Work',
+            description: 'Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs.',
+            images: [
+              {
+                url: 'https://dev.antoine-paul.com/og_img.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Paul Antoine website preview',
+              }
+            ],
+            site_name: 'Paul Antoine',
+          }}
+        />
         <Fade delay={50}>
           <section className="Work__title">
             <div className="typography__eyebrow">

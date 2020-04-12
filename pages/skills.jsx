@@ -6,6 +6,7 @@ import { DiBootstrap, DiGrunt, DiGulp, DiJqueryLogo, DiMysql, DiRedis, DiDrupal,
 import { renderToString } from 'react-dom/server';
 import Button from '../components/Button';
 import ContactBlock from '../components/ContactBlock';
+import { NextSeo } from 'next-seo';
 
 
 export default class Index extends React.Component {
@@ -35,7 +36,26 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Layout title={'Skills'}>
+      <Layout>
+        <NextSeo
+          title="Paul Antoine | Skills"
+          description="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs."
+          canonical="https://dev.antoine-paul.com/skills"
+          openGraph={{
+            url: 'https://dev.antoine-paul.com/skills',
+            title: '👨🏻‍💻 Paul Antoine | About',
+            description: 'Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs.',
+            images: [
+              {
+                url: 'https://dev.antoine-paul.com/og_img.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Paul Antoine website preview',
+              }
+            ],
+            site_name: 'Paul Antoine',
+          }}
+        />
         <Fade delay={50}>
           <section className="Skills">
             <div>
