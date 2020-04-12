@@ -45,8 +45,8 @@
     top: 0;
     border: solid 1px $primary;
     border-radius: 100px;
-    transition: background .3s;
-    
+    border-color: $primary;
+    color: $primary;
     &:hover {
       left: -15px;
       right: -15px;
