@@ -46,7 +46,7 @@ export default class Work extends React.Component {
                   <h2 className="typography__headline">Landing page</h2>
                   <h2 className="typography__subhead">Valentin Hauy</h2>
                   <div className="typography__body">
-                    <p>Création d'une landing page from scratch pour la récolte de dons d'une association.</p>
+                    <p>Landing page made from scratch for a charitable fundraising.</p>
                     <p><FaCss3 /> <strong>CSS</strong></p>
                     <p><DiJqueryLogo /> <strong>jQuery</strong></p>
                   </div>
@@ -58,7 +58,7 @@ export default class Work extends React.Component {
                   <h2 className="typography__headline">Mobile app</h2>
                   <h2 className="typography__subhead">Redspher Portal</h2>
                   <div className="typography__body">
-                    <p>Developpement d'une application mobile de gestion de livraison pour un gestionnaire logistique.</p>
+                    <p>Mobile app development for delivery managment of a logitic company.</p>
                     <p><FaReact /> <strong>React Native</strong></p>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export default class Work extends React.Component {
                   <h2 className="typography__headline">CMS Website</h2>
                   <h2 className="typography__subhead">Arts et Métiers</h2>
                   <div className="typography__body">
-                    <p>Integration du theme d'un site web d'université developpé avec le CMS Drupal 8.</p>
+                    <p>Theme integration of a university website made with Drupal 8 CMS.</p>
                     <p><FaSass /> <strong>Sass</strong></p>
                     <p><DiJqueryLogo /> <strong>jQuery</strong></p>
                     <p><DiJavascript1 /> <strong>Native JS</strong></p>
@@ -82,7 +82,7 @@ export default class Work extends React.Component {
                   <h2 className="typography__headline">Ecommerce</h2>
                   <h2 className="typography__subhead">La plateforme du bâtiment</h2>
                   <div className="typography__body">
-                    <p>Refonte d'un site Ecommerce et developpement d'un lot d'applications web pour la gestion des commandes et des clients.</p>
+                    <p>E-commerce platform recast and development of a batch of web applications for customer and order managment.</p>
                     <p><FaNodeJs /> <strong>NodeJS</strong></p>
                     <p><FaAngular /> <strong>AngularJS</strong></p>
                   </div>
@@ -94,7 +94,7 @@ export default class Work extends React.Component {
                   <h2 className="typography__headline">CMS Website</h2>
                   <h2 className="typography__subhead">Conservatoire d'Asnières</h2>
                   <div className="typography__body">
-                    <p>Developpement complet d'un site de conservatoire pour presenter l'etablissement et publier des articles et evenements.</p>
+                    <p>Full stack development of a conservatory website presenting articles and schedule.</p>
                     <p><FaSass /> <strong>Sass</strong></p>
                     <p><FaDrupal /> <strong>Drupal 8</strong></p>
                   </div>
@@ -106,7 +106,7 @@ export default class Work extends React.Component {
                   <h2 className="typography__headline">CMS Website</h2>
                   <h2 className="typography__subhead">Noelle Eiferman</h2>
                   <div className="typography__body">
-                    <p>Developpement complet d'un Portfolio d'artiste peintre présentant ses oeuvres.</p>
+                    <p>Full stack development of a painter portfolio presenting paints.</p>
                     <p><FaSass /> <strong>Sass</strong></p>
                     <p><FaDrupal /> <strong>Drupal 8</strong></p>
                     <p><DiJavascript1 /> <strong>Native JS</strong></p>
@@ -119,7 +119,7 @@ export default class Work extends React.Component {
                   <h2 className="typography__headline">CMS Website</h2>
                   <h2 className="typography__subhead">EM Normandie</h2>
                   <div className="typography__body">
-                    <p>Integration du theme d'un site web d'université developpé avec le CMS Drupal 8.</p>
+                    <p>Theme integration of a university website made with Drupal 8 CMS.</p>
                     <p><FaSass /> <strong>Sass</strong></p>
                     <p><DiJqueryLogo /> <strong>jQuery</strong></p>
                     <p><DiJavascript1 /> <strong>Native JS</strong></p>
