@@ -1,12 +1,14 @@
 import Layout from '../components/Layout';
 import Fade from 'react-reveal/Fade'
 import TagCloud from 'TagCloud';
-import { FaSass, FaReact, FaJs, FaNodeJs, FaAngular, FaCss3, FaDrupal, FaVuejs, FaCube, FaNeuter, FaNeos, FaAdobe, FaSketch, FaGithub, FaInvision, FaPen, FaCubes, FaLink, FaApple } from 'react-icons/fa';
+import { FaSass, FaReact, FaJs, FaNodeJs, FaAngular, FaCss3, FaDrupal, FaVuejs, FaCube, FaNeuter, FaNeos, FaAdobe, FaSketch, FaGithub, FaInvision, FaPen, FaCubes, FaLink, FaApple, FaGitlab, FaFigma } from 'react-icons/fa';
 import { DiBootstrap, DiGrunt, DiGulp, DiJqueryLogo, DiMysql, DiRedis, DiDrupal, DiGit, DiJavascript, DiJavascript1, DiFirebase, DiHeroku, DiVisualstudio} from 'react-icons/di';
 import { renderToString } from 'react-dom/server';
 import Button from '../components/Button';
 import ContactBlock from '../components/ContactBlock';
 import { NextSeo } from 'next-seo';
+import { SiElectron, SiNextDotJs, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { MdFlashOn } from 'react-icons/md';
 
 
 export default class Index extends React.Component {
@@ -78,41 +80,41 @@ export default class Index extends React.Component {
               </div>
               <h3 className="typography__eyebrow">Prefered technologies :</h3>
               <div className="typography__body__elevated">
-                <br/>
-                <p><FaReact /> <strong>React</strong> - JavaScript UI Library</p>
-                <p><FaNeos /> <strong>Next.JS</strong> - React Framework for web app</p>
-                <p><FaAngular /> <strong>AngularJS</strong> - JavaScript MVM Framework</p>
-                <p><FaNodeJs /> <strong>Node JS</strong> - JavaScript Runtime</p>
-                <p><FaSass /> <strong>SASS</strong> - CSS Extension language</p>
-                <p><DiGit /> <strong>Git</strong> - Versionning system</p>
+                  <br />
+                  <p><SiTypescript /> <strong>Typescript</strong> - JavaScript extension language</p>
+                  <p><FaReact /> <strong>React</strong> - JavaScript UI Library</p>
+                  <p><SiNextDotJs /> <strong>Next.JS</strong> - React Framework for web app</p>
+                  <p><SiTailwindcss /> <strong>Tailwind</strong> - CSS Library</p>
+                  <p><MdFlashOn /> <strong>Vitejs</strong> - Module bundler</p>
+                  <p><DiGit /> <strong>Git</strong> - Versionning system</p>
+                  <p><DiFirebase /> <strong>Supabase</strong> - Application development platform</p>
                 <br/>
               </div>
               <h3 className="typography__eyebrow">I also use :</h3>
               <div className="typography__body__elevated">
-                <br/>
+                <br />
+                <p><FaNodeJs /> <strong>Node JS</strong> - JavaScript Runtime</p>
+                <p><SiElectron /> <strong>Electron</strong> - JavaScript Desktop App Platform</p>
                 <p><FaVuejs /> <strong>VueJS</strong> - JavaScript front-end framework</p>
                 <p><FaAngular /> <strong>Angular 2+</strong> - JavaScript front-end framework</p>
+                <p><FaAngular /> <strong>AngularJS</strong> - JavaScript MVM Framework</p>
                 <p><FaReact /> <strong>React Native</strong> - React framework for mobile apps</p>
-                <p><DiBootstrap /> <strong>Bootstrap</strong> - CSS Library</p>
-                <p><DiGrunt /> <strong>Grunt</strong> - Task runner</p>
-                <p><DiGulp /> <strong>Gulp</strong> - Task runner</p>
+                <p><FaSass /> <strong>SASS</strong> - CSS Extension language</p>
                 <p><FaCubes /> <strong>Webpack</strong> - Module bundler</p>
                 <p><DiJqueryLogo /> <strong>jQuery</strong> - JavaScript library</p>
                 <p><DiMysql /> <strong>MySQL</strong> - Database language</p>
                 <p><DiRedis /> <strong>Redis</strong> - Data storage</p>
                 <p><DiDrupal /> <strong>Drupal 8</strong> - Content managment system</p>
-                <p><DiJavascript1 /> <strong>Typescript</strong> - JavaScript extension language</p>
                 <p><DiFirebase /> <strong>Firebase</strong> - Application development platform</p>
                 <p><DiHeroku /> <strong>Heroku</strong> - Cloud application platform</p>
                 <br/>
               </div>
               <h3 className="typography__eyebrow">Tools :</h3>
               <div className="typography__body__elevated">
-                <br/>
-                <p><FaAdobe /> <strong>Adobe XD</strong> - UI/UX Design software</p>
-                <p><FaSketch /> <strong>Sketch</strong> - UI/UX Design software</p>
-                <p><FaInvision /> <strong>inVision</strong> - Product design platform</p>
+                <br />
+                <p><FaFigma /> <strong>Figma</strong> - Product design platform</p>
                 <p><FaGithub /> <strong>Github</strong> - Team development host</p>
+                <p><FaGitlab /> <strong>Gitlab</strong> - Team development host</p>
                 <p><FaPen /> <strong>DrawIo</strong> - Online diagram software</p>
                 <p><FaLink /> <strong>Postman</strong> - Request builder</p>
                 <br/>
