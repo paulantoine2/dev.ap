@@ -21,13 +21,17 @@ export default class Index extends React.Component {
               "Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs.",
             images: [
               {
-                url: "https://dev-ap.netlify.appog_img.jpg",
+                url: "https://dev-ap.netlify.app/og_img.png",
                 width: 1200,
                 height: 630,
                 alt: "Paul Antoine website preview",
               },
             ],
             site_name: "Paul Antoine",
+          }}
+          twitter={{ 
+            cardType: "summary",
+            site: "https://dev-ap.netlify.app"
           }}
         />
         <Fade delay={50} timeout={500}>

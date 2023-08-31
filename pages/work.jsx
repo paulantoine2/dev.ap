@@ -32,7 +32,7 @@ export default class Work extends React.Component {
               "Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs.",
             images: [
               {
-                url: "https://dev-ap.netlify.appog_img.jpg",
+                url: "https://dev-ap.netlify.appog_img.png",
                 width: 1200,
                 height: 630,
                 alt: "Paul Antoine website preview",
