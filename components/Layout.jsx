@@ -30,7 +30,7 @@ export default class Layout extends Component {
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           {/* <meta property="og:url" content={`https://dev.antoine-paul.com`} />
-          <meta property="og:image" content="https://dev.antoine-paul.com/fb_image.png" />
+          <meta property="og:image" content="https://dev-ap.netlify.appfb_image.png" />
           <meta property="og:image:alt" content="Antoine Paul website preview"/>
           <meta property="og:description" content="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs." />
           <meta property="og:title" content={`${title} | Paul Antoine`} />

@@ -24,15 +24,15 @@ export default class Work extends React.Component {
           noindex={true}
           title="Paul Antoine | Work"
           description="Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs."
-          canonical="https://dev.antoine-paul.com/work"
+          canonical="https://dev-ap.netlify.appwork"
           openGraph={{
-            url: "https://dev.antoine-paul.com/work",
+            url: "https://dev-ap.netlify.appwork",
             title: "👨🏻‍💻 Paul Antoine | Work",
             description:
               "Front-end developer producing high quality web and mobile apps with outstanding user experience and beautiful designs.",
             images: [
               {
-                url: "https://dev.antoine-paul.com/og_img.jpg",
+                url: "https://dev-ap.netlify.appog_img.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Paul Antoine website preview",
